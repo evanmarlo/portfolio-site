@@ -1,0 +1,37 @@
+/* The animation code */
+@keyframes fade {
+    0%   {color: rgb(8, 8, 8);}
+    10%   {color: rgb(8, 8, 8);}
+    100% {color: rgb(255, 255, 255);}
+  }
+
+  body {
+    background-color: rgb(8, 8, 8);
+  }
+
+  h1 {
+    font-family: "Georgia", Times, serif;
+  }
+
+  .intro_div {
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 50%;
+    height: 50%;
+    color: rgb(255, 255, 255);
+  }  
+
+  .intro1 {
+    animation-name: fade;
+    animation-duration: 4s;
+  }
+
+  .intro2 {
+    color: rgb(8, 8, 8);
+    animation-name: fade;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+  }
