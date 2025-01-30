@@ -27,13 +27,13 @@
 
   .intro1 {
     animation-name: fade;
-    animation-duration: 4s;
+    animation-duration: 2s;
   }
 
   .intro2 {
     color: rgb(8, 8, 8);
     animation-name: fade;
-    animation-duration: 4s;
-    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
   }
