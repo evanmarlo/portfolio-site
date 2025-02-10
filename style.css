@@ -1,9 +1,8 @@
-/* The animation code */
-@keyframes fade {
-    0%   {color: rgb(255, 255, 255);}
-    10%   {color: rgb(255, 255, 255);}
-    100% {color: rgb(0, 0, 0);}
-  }
+  @keyframes fade {
+      0%   {color: rgb(255, 255, 255);}
+      10%   {color: rgb(255, 255, 255);}
+      100% {color: rgb(0, 0, 0);}
+    }
 
   body {
     font-family: "Abel", sans-serif;
@@ -32,15 +31,18 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 2.5em;
+    width: 3.5vw;
     transition: transform 0.5s ease-in;
   }
 
-  p {
-    font-size: 24px;
+  .p_top {
+    transition: font-size 0.5s ease-in;
+    font-size: 1.62vw;
   }
 
-  h1 {
+  .h1_top {
+    transition: font-size 0.5s ease-in;
+    font-size: 2vw;
     color: black;
     font-family: "Georgia", Times, serif;
   }
@@ -119,6 +121,10 @@
     vertical-align: bottom;
     width: 95.5%;
     height: fit-content;
+  }
+
+  .no-transition {
+    transition: none !important;
   }
 
 
