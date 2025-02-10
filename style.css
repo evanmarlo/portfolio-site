@@ -127,6 +127,17 @@
     transition: none !important;
   }
 
+  .nav .navItem {
+    background-color: #e7e7e7;
+    display: block;
+    margin-top: .5em;
+    padding-top: .62em;
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: .62em;
+    text-align: center;
+    border-radius: 1em;
+  }
 
 
   
