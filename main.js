@@ -21,14 +21,14 @@ function navOpen() {
         R.style.width = '30.9%';
 
         // Scale paragraphs when nav is open
-        for (let i = 0; i < p.length; i++) {
-            p[i].style.fontSize = '1.31vw';
-            }
+        // for (let i = 0; i < p.length; i++) {
+        //     p[i].style.fontSize = '.81vw';
+        //     }
     
-        // Scale header when nav is open
-        for (let i = 0; i < h.length; i++) {
-            h[i].style.fontSize = '1.62vw';
-            }
+        // // Scale header when nav is open
+        // for (let i = 0; i < h.length; i++) {
+        //     h[i].style.fontSize = '1.31vw';
+        //     }
     }
     else {
         // Set nav as closed
@@ -38,17 +38,17 @@ function navOpen() {
         hamburger.style.transform = "rotate(0deg)";
 
         // Restore size of columns
-        M.style.width = '52.8%';
+        M.style.width = '58.4%';
         L.style.width = '32.6%';
-        R.style.width = '14.6%';
+        R.style.width = '9%';
 
         // Restore text size
-        for (let i = 0; i < p.length; i++) {
-            p[i].style.fontSize = '1.62vw';
-            }
-        for (let i = 0; i < h.length; i++) {
-            h[i].style.fontSize = '2vw';
-            }
+        // for (let i = 0; i < p.length; i++) {
+        //     p[i].style.fontSize = '1vw';
+        //     }
+        // for (let i = 0; i < h.length; i++) {
+        //     h[i].style.fontSize = '1.62vw';
+        //     }
     }
 }
 
