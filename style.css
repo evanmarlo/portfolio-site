@@ -3,6 +3,18 @@ body, html {
   margin: 0;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+li {
+  display: inline;
+}
+
 .parallax {
   /* The image used */
   background-image: url("stairsedit.png");
@@ -27,6 +39,28 @@ body, html {
   }
 }
 
+.intro {
+  margin: 0;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.intro_text {
+  font-family: "Raleway", sans-serif;
+  font-size: 84px;
+  text-align: center;
+  margin: 0;
+}
+
+.intro_sub_text {
+  font-size: 32px;
+  font-family: "Cabin", sans-serif;
+  text-align: center;
+}
+
 .separator {
   background-color: #002368;
   width: 100%;
@@ -34,4 +68,3 @@ body, html {
   margin: 0%;
 }
 
-  
