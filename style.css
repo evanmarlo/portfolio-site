@@ -1,152 +1,37 @@
-  @keyframes fade {
-      0%   {color: rgb(255, 255, 255);}
-      10%   {color: rgb(255, 255, 255);}
-      100% {color: rgb(0, 0, 0);}
-    }
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
-  body {
-    font-family: "Abel", sans-serif;
-    font-weight: 200;
-    /* background-image: url("graydots.jpg");
-    background-size: cover; */
-    background-image: url("graydots.jpg");
-    background-size: cover;
-    background-color: white;
-    /* background-color: rgb(255, 255, 255); */
-    margin: 0;
+.parallax {
+  /* The image used */
+  background-image: url("stairsedit.png");
+
+  /* Full height */
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
   }
+}
 
-  /* .nav {
-    margin-top: 4em;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  } */
-  .nav {
-    margin: auto;
-    margin-top: 2em;
-    width: 50%;
-  }
-
-  .navimage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 2vw;
-    transition: transform 0.5s ease-in;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li a {
-    text-align:center;
-    display: block;
-  }
-
-  li a:hover {
-    background-color: #f30000;
-    color: rgb(255, 255, 255);
-  }
-
-  .p_top {
-    transition: font-size 0.5s ease-in;
-    font-size: 1vw;
-  }
-
-  .h1_top {
-    transition: font-size 0.5s ease-in;
-    font-size: 1.62vw;
-    color: black;
-    font-family: "Georgia", Times, serif;
-  }
-
-  .intro_div {
-    margin-top: 4em;
-    margin-left: 8em;
-    margin-right: 8em;
-    text-align: left;
-    /* margin-right: 8em; */
-    /* position: absolute; */
-    top: 0; left: 0; bottom: 0; right: 0;
-    /* width: 50%;
-    height: 50%; */
-    color: rgb(255, 255, 255);
-  }  
-
-  .intro1 {
-    animation-name: fade;
-    animation-duration: 2s;
-  }
-
-  .intro2 {
-    color: rgb(255, 255, 255);
-    animation-name: fade;
-    animation-duration: 2s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-  }
-
-  .intro3 {
-    color: rgb(255, 255, 255);
-    animation-name: fade;
-    animation-duration: 2s;
-    animation-delay: 6s;
-    animation-fill-mode: forwards;
-  }
-
-  .column {
-    float: left;
-  }
-  
-  .left {
-    height: 100%;
-    transition: width 0.5s ease-in;
-    width: 32.6%;
-
-  }
-  
-  .middle {
-    transition: width 0.5s ease-in;
-    width: 58.4%;
-  }
-
-  .right {
-    transition: width 0.5s ease-in;
-    /* transition: background-color 0.5s linear; */
-    width: 9%;
-  }
-
-  .separator {
-    background-color: #002368;
-    width: 100%;
-    height: 34em;
-    margin: 0%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .headshot_desktop {
-    padding-bottom: 0%;
-    margin-top: 4em;
-    margin-bottom: 0%;
-    vertical-align: bottom;
-    width: 95.5%;
-    height: fit-content;;
-  }
-
-  .no-transition {
-    transition: none !important;
-  }
-
-
+.separator {
+  background-color: #002368;
+  width: 100%;
+  height: 34em;
+  margin: 0%;
+}
 
   
