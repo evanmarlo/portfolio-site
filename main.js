@@ -5,9 +5,11 @@ function navOpen() {
     const R = document.getElementById("R")
     const p = document.getElementsByClassName("p_top")
     const h = document.getElementsByClassName("h1_top")
+    const nav = document.getElementById("first_parallax").getElementsByClassName("nav")[0]
     const isOpen = hamburger.dataset.isOpen;
 
     if (isOpen === 'false') {
+        nav.style.transform = "translate(-14.6vw, 0px)";
 
         // Rotate nav image
         hamburger.style.transform = "rotate(90deg)";
@@ -31,6 +33,8 @@ function navOpen() {
         //     }
     }
     else {
+        nav.style.transform = "translate(14.6vw, 0px)";
+
         // Set nav as closed
         hamburger.dataset.isOpen = 'false';
 
