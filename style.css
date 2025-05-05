@@ -1,4 +1,5 @@
 body, html {
+  background-color: #e2e2e2;
   height: 104%;
   margin: 0;
 }
@@ -17,7 +18,7 @@ li {
 
 .parallax {
   /* The image used */
-  background-image: url("stairsedit.png");
+  background-image: url("stairs.jpg");
 
   /* Full height */
   height: 104%;
