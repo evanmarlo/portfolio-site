@@ -1,5 +1,9 @@
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 body, html {
-  background-color: #e2e2e2;
   height: 104%;
   margin: 0;
 }
@@ -58,9 +62,9 @@ li {
   font-size: 84px;
   text-align: center;
   margin: 0;
-/* 
+
   animation-name: fade;
-  animation-duration: 2s; */
+  animation-duration: 2s;
 }
 
 .intro_sub_text {
@@ -68,10 +72,10 @@ li {
   font-family: "Cabin", sans-serif;
   text-align: center;
 
-  /* animation-name: fade;
+  animation-name: fade;
   animation-duration: 2s;
   animation-delay: 2s;
-  animation-fill-mode: forwards; */
+  animation-fill-mode: forwards;
 }
 
 .navimage {

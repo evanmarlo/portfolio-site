@@ -1,10 +1,10 @@
 function navOpen() {
     const hamburger = document.getElementById("hamburger");
-    const M = document.getElementById("M")
-    const L = document.getElementById("L")
-    const R = document.getElementById("R")
-    const p = document.getElementsByClassName("p_top")
-    const h = document.getElementsByClassName("h1_top")
+    const M = document.getElementById("M");
+    const L = document.getElementById("L");
+    const R = document.getElementById("R");
+    const p = document.getElementsByClassName("p_top");
+    const h = document.getElementsByClassName("h1_top");
     const nav = document.getElementById("first_parallax").getElementsByClassName("nav")[0]
     const isOpen = hamburger.dataset.isOpen;
 
@@ -56,8 +56,8 @@ function navOpen() {
     }
 }
 
-const p = document.getElementsByClassName("p_top")
-const h = document.getElementsByClassName("h1_top")
+const p = document.getElementsByClassName("p_top");
+const h = document.getElementsByClassName("h1_top");
 var resizeTimer;
 window.onresize = () => {
     for (let i = 0; i < p.length; i++) {

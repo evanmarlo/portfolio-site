@@ -4,7 +4,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
   <link rel="stylesheet" href="style.css">
-  <script defer="defer" type="text/javascript" src="main.js"></script>
 <title>Evan Anderson Portfolio</title>
 </head>
 
@@ -39,7 +38,7 @@
 
   </div> -->
 
-<div id="first_parallax" class="parallax" style = "display:none;">
+<div id="first_parallax" class="parallax">
   <a href="#">
     <img id="hamburger" class="navimage" data-is-open="false" onclick="navOpen()" src="menu.png">
     <!-- <ul>
@@ -61,7 +60,7 @@
   </div> -->
   <div class="intro">
     <p class="intro_text">Hi, I'm Evan</p>
-    <p class="intro_sub_text">Welcome to my online portfolio.</p>
+    <p class="intro_sub_text" style="opacity: 0;">Welcome to my online portfolio.</p>
   </div>
 </div>
 
@@ -72,9 +71,27 @@
 
 <div class="separator"></div>
 
-<script>
-  right here bring back parallax??
-</script>
+<!-- <script>
+    window.onload = function () {
+        setTimeout(function() {
+          const html = document.getElementsByTagName("html")[0];
+          const body = document.body;
+          const first = document.getElementById("first_parallax");  
+          first.style.display = null;
+          body.style.display = null;
+          html.style.display = null;   
+        }, 200);
+    }
+  // const html = document.getElementsByTagName("html")[0];
+  // const body = document.body;
+  // const first = document.getElementById("first_parallax");
 
+  // setTimeout(() => {
+  //   first.style.display = null;
+  //   body.style.display = null;
+  //   html.style.display = null;
+  // }, 1000); 
+</script> -->
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
