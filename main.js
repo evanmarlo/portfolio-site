@@ -77,3 +77,11 @@ window.onresize = () => {
         }
   });
 };
+
+function scrollFunction() {
+    const arrow = document.getElementsByClassName("arrow")[0];
+    arrow.classList.add("end_blink");
+    arrow.classList.remove('arrow');
+}
+
+window.onscroll = scrollFunction;
