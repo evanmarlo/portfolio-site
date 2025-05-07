@@ -113,21 +113,19 @@ li {
 }
 
 .column_left {
-  background-color: aqua;
   flex: 40%;
 }
 
 .column_right {
-  background-color: red;
   flex: 40%;
 }
 
 .column_box {
-  background-color: green;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 8em;
+  padding-left: 4em;
+  padding-right: 4em;
   padding-top: 4em;
 }
 
@@ -153,6 +151,7 @@ li {
   /* margin-left: auto;
   margin-right: auto; */
   width: 3em;
+  height: 3em;
   transition: transform 0.5s ease-in;
   z-index: 99;
 }
@@ -188,8 +187,8 @@ li {
 a img {
   border-radius: 0em;
   padding-right: .5em;
-  height: 3em;
-  width: 3em;
+  height: 5em;
+  width: 5em;
 }
 
 img {
@@ -200,4 +199,32 @@ img {
   width: 90%;
   margin-bottom: 1em; */
   /* padding-bottom: 1em; */
+}
+
+.home_projects {
+  margin: 4em;
+}
+
+.project_text {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-size: 52px;
+  text-align: center;
+  margin: 0;
+}
+
+.project_subtext {
+  font-size: 28px;
+  font-family: "Cabin", sans-serif;
+  text-align: center;
+}
+
+.project_box {
+  margin: auto;
+  width: fit-content;
+}
+
+.project_img {
+  margin-left: auto;
+  width: 50%;
 }
