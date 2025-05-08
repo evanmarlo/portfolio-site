@@ -126,18 +126,28 @@ li {
   margin: auto;
 }
 
+.project_row {
+  width: 60%;
+  display: flex;
+  margin: auto;
+}
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.column_left {
+.column {
   flex: 40%;
 }
 
+.column_left {
+  flex: 30%;
+}
+
 .column_right {
-  flex: 40%;
+  flex: 30%;
 }
 
 .column_box {
@@ -239,12 +249,25 @@ img {
   text-align: center;
 }
 
-.project_box {
-  margin: auto;
-  width: fit-content;
-}
-
-.project_img {
+.left_project_img {
+  padding-top: 4em;
+  padding-right: 4em;
+  display: block;
   margin-left: auto;
   width: 50%;
+}
+
+.right_project_img {
+  padding-top: 4em;
+  padding-left: 4em;
+  display: block;
+  margin-right: auto;
+  width: 50%;
+}
+
+.middle_project_img {
+  padding-top: 4em;
+  display: block;
+  margin: auto;
+  width: 25%;
 }
