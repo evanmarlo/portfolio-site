@@ -78,10 +78,22 @@ window.onresize = () => {
   });
 };
 
+// This section counts how many times the arrow blinks
+// When the user scrolls down, the arrow blinks the iterCount + 1th time and then disappears
+let iterCount = 0;
+const arrow = document.getElementsByClassName("arrow")[0];
+
+arrow.addEventListener("animationiteration", () => {
+    iterCount++;
+})
+
 function scrollFunction() {
-    const arrow = document.getElementsByClassName("arrow")[0];
-    arrow.classList.add("end_blink");
-    arrow.classList.remove('arrow');
+    if (iterCount === 0) {
+        arrow.style.animationIterationCount = 0; // Don't blink if user scrolls before it starts blinking
+    }
+    else {
+        arrow.style.animationIterationCount = iterCount + 1;
+    }
 }
 
 window.onscroll = scrollFunction;
