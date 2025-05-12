@@ -98,6 +98,18 @@ function scrollFunction() {
 
 window.onscroll = scrollFunction;
 
-function revealGASPACS() {
-    console.log(5 + 6);
+function projectReveal(projectIndex) {
+    const gas = document.getElementById("gas");
+
+    if (projectIndex === 0) {
+        gas.style.opacity = 1;
+    }
+}
+
+function projectHide(projectIndex) {
+    const gas = document.getElementById("gas");
+
+    if (projectIndex === 0) {
+        gas.style.opacity = 0;
+    }
 }
