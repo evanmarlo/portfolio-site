@@ -97,3 +97,7 @@ function scrollFunction() {
 }
 
 window.onscroll = scrollFunction;
+
+function revealGASPACS() {
+    console.log(5 + 6);
+}
