@@ -35,29 +35,20 @@ li {
 }
 
 .parallax {
-  /* The image used */
   background-image: url("stairs.jpg");
 
-  /* Full height */
-  height: 104%;
+  height: 102%;
   width: 100%;
   overflow: hidden;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 
-  /* Create the parallax scrolling effect */
+  /* Parallax effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
 }
 
 .arrow {
@@ -125,12 +116,6 @@ li {
   display: flex;
   margin: auto;
 }
-
-/* .project_row {
-  width: 60%;
-  display: flex;
-  margin: auto;
-} */
 
 .row:after {
   content: "";
@@ -298,4 +283,38 @@ img {
 .project_column {
   flex: 26.666%;
   height: 28em;
+}
+
+a {
+  color: #239cff;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #8acaff;;
+}
+
+a.project_link {
+  text-decoration: none;
+}
+
+.last_parallax {
+  height: 90%;
+}
+
+/* For mobile/vertical screen */
+@media only screen and (max-device-width: 1366px) {
+  .row {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+  .row:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .last_parallax {
+    height: 150%;
+  }
 }
