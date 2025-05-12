@@ -276,7 +276,6 @@ img {
   aspect-ratio: 1 / 1;
   border-radius: 40px;
   transition: width 0.5s;
-  background-image: url("gasicon.jpg");
   background-size: cover;
 }
 
@@ -291,6 +290,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  padding-top: .25em;
 
   transition: opacity .25s ease-in-out;
 }

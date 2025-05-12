@@ -100,16 +100,48 @@ window.onscroll = scrollFunction;
 
 function projectReveal(projectIndex) {
     const gas = document.getElementById("gas");
+    const fish = document.getElementById("fish");
+    const tutor = document.getElementById("typing");
+    const dashboard = document.getElementById("dashboard");
+    const license = document.getElementById("license");
 
     if (projectIndex === 0) {
         gas.style.opacity = 1;
+    }
+    else if (projectIndex === 1) {
+        fish.style.opacity = 1;
+    }
+    else if (projectIndex === 2) {
+        tutor.style.opacity = 1;
+    }
+    else if (projectIndex === 3) {
+        dashboard.style.opacity = 1;
+    }
+    else {
+        license.style.opacity = 1;
     }
 }
 
 function projectHide(projectIndex) {
     const gas = document.getElementById("gas");
-
+    const fish = document.getElementById("fish");
+    const tutor = document.getElementById("typing");
+    const dashboard = document.getElementById("dashboard");
+    const license = document.getElementById("license");
+    
     if (projectIndex === 0) {
         gas.style.opacity = 0;
+    }
+    else if (projectIndex === 1) {
+        fish.style.opacity = 0;
+    }
+    else if (projectIndex === 2) {
+        tutor.style.opacity = 0;
+    }
+    else if (projectIndex === 3) {
+        dashboard.style.opacity = 0;
+    }
+    else {
+        license.style.opacity = 0;
     }
 }
