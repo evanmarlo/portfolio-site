@@ -1,15 +1,21 @@
-function navOpen() {
+function navOpen(isMobile) {
     const hamburger = document.getElementById("hamburger");
-    const M = document.getElementById("M");
-    const L = document.getElementById("L");
-    const R = document.getElementById("R");
+    // const M = document.getElementById("M");
+    // const L = document.getElementById("L");
+    // const R = document.getElementById("R");
     const p = document.getElementsByClassName("p_top");
     const h = document.getElementsByClassName("h1_top");
     const nav = document.getElementById("first_parallax").getElementsByClassName("nav")[0]
     const isOpen = hamburger.dataset.isOpen;
 
     if (isOpen === 'false') {
-        nav.style.transform = "translate(-14.6vw, 0px)";
+        if (isMobile) {
+            nav.style.transform = "translate(-100vw, 0px)";
+        }
+        else {
+            nav.style.transform = "translate(-14.6vw, 0px)";
+        }
+
 
         // Rotate nav image
         hamburger.style.transform = "rotate(90deg)";
@@ -18,9 +24,9 @@ function navOpen() {
         hamburger.dataset.isOpen = 'true';
 
         // Scale Columns when nav is open
-        M.style.width = '42.7%';
-        L.style.width = '26.4%';
-        R.style.width = '30.9%';
+        // M.style.width = '42.7%';
+        // L.style.width = '26.4%';
+        // R.style.width = '30.9%';
 
         // Scale paragraphs when nav is open
         // for (let i = 0; i < p.length; i++) {
@@ -33,7 +39,12 @@ function navOpen() {
         //     }
     }
     else {
-        nav.style.transform = "translate(14.6vw, 0px)";
+        if (isMobile) {
+            nav.style.transform = "translate(100vw, 0px)";
+        }
+        else {
+            nav.style.transform = "translate(14.6vw, 0px)";
+        }
 
         // Set nav as closed
         hamburger.dataset.isOpen = 'false';
@@ -42,9 +53,9 @@ function navOpen() {
         hamburger.style.transform = "rotate(0deg)";
 
         // Restore size of columns
-        M.style.width = '58.4%';
-        L.style.width = '32.6%';
-        R.style.width = '9%';
+        // M.style.width = '58.4%';
+        // L.style.width = '32.6%';
+        // R.style.width = '9%';
 
         // Restore text size
         // for (let i = 0; i < p.length; i++) {
