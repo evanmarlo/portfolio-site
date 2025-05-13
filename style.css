@@ -189,9 +189,37 @@ li {
   height: 104%;
   width: 14.6%;
   margin-left: 100%;
-  background-color: #ffffff;
+  background-color: #222831;
   transition: transform .62s ease-out;
   z-index: 98;
+}
+
+.nav_item {
+  display: flex;
+  text-align: left;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.nav_item_container {
+  display: block;
+}
+
+.nav_item_container :hover {
+  background-color: #393E46;
+}
+
+.nav_item_img {
+  width: 24px;
+  height: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.nav_item_text {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  color: white;
 }
 
 .separator {
