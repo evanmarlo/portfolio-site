@@ -1,5 +1,6 @@
 function navOpen(isMobile) {
     const hamburger = document.getElementById("hamburger");
+    const hamburger_mobile = document.getElementById("hamburger_mobile");
     // const M = document.getElementById("M");
     // const L = document.getElementById("L");
     // const R = document.getElementById("R");
@@ -16,9 +17,17 @@ function navOpen(isMobile) {
             nav.style.transform = "translate(-14.6vw, 0px)";
         }
 
-
-        // Rotate nav image
+        // Rotate nav image and change to white
         hamburger.style.transform = "rotate(90deg)";
+        hamburger.style.opacity = 0;
+        hamburger_mobile.style.transform = "rotate(90deg)";
+        hamburger_mobile.style.opacity = 0;
+        setTimeout(() => {
+            hamburger.src="menuwhite.png";
+            hamburger.style.opacity = 1;
+            hamburger_mobile.src="menuwhite.png";
+            hamburger_mobile.style.opacity = 1;
+        }, 500);
 
         // Set nav as open
         hamburger.dataset.isOpen = 'true';
@@ -49,8 +58,17 @@ function navOpen(isMobile) {
         // Set nav as closed
         hamburger.dataset.isOpen = 'false';
 
-        // Rotate nav back to original position
+        // Rotate nav back to original position and change to black
         hamburger.style.transform = "rotate(0deg)";
+        hamburger.style.opacity = 0;
+        hamburger_mobile.style.transform = "rotate(0deg)";
+        hamburger_mobile.style.opacity = 0;
+        setTimeout(() => {
+            hamburger.src="menu.png";
+            hamburger.style.opacity = 1;
+            hamburger_mobile.src="menu.png";
+            hamburger_mobile.style.opacity = 1;
+        }, 200);
 
         // Restore size of columns
         // M.style.width = '58.4%';
