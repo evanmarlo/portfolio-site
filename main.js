@@ -1,3 +1,5 @@
+// evan right now make hamburger scroll with you and fix blinking thing
+
 function navOpen(isMobile) {
     const hamburger = document.getElementById("hamburger");
     const hamburger_mobile = document.getElementById("hamburger_mobile");
@@ -109,15 +111,21 @@ window.onresize = () => {
 
 // This section counts how many times the arrow blinks
 // When the user scrolls down, the arrow blinks the iterCount + 1th time and then disappears
+// This isn't just setting variables, it is setting how many times to blink
 let iterCount = 0;
+let started = false;
 const arrow = document.getElementsByClassName("arrow")[0];
 
+arrow.addEventListener("animationstart", () => {
+    started = true;
+})
 arrow.addEventListener("animationiteration", () => {
     iterCount++;
+    console.log(iterCount);
 })
 
 function scrollFunction() {
-    if (iterCount === 0) {
+    if (started === false) {
         arrow.style.animationIterationCount = 0; // Don't blink if user scrolls before it starts blinking
     }
     else {
