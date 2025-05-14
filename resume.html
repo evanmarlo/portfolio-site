@@ -7,13 +7,13 @@
 <title>Evan Anderson Portfolio</title>
 </head>
 
-<body>
-<div id="first_parallax" class="parallax">
+<body style="height: 100%;">
+<div id="first_parallax" class="parallax" style="height: 100%">
   <!-- Two hamburgers, one is for desktop the other is for mobile -->
-  <a href="#">
+  <a href="#!">
     <img id="hamburger" class="navimage" data-is-open="false" onclick="navOpen(false)" src="menu.png">
   </a>
-  <a href="#">
+  <a href="#!">
     <img id="hamburger_mobile" class="navimage_mobile" data-is-open="false" onclick="navOpen(true)" src="menu.png">
   </a>
   <div class="nav">
@@ -60,87 +60,17 @@
       </a>
     </div>
   </div>
-  <div class="intro">
-    <p class="intro_text" style="opacity: 0;">Hi, I'm Evan</p>
-    <p class="intro_sub_text" style="opacity: 0;">Welcome to my online portfolio.</p>
-  </div>
-  <div class="arrow" style="opacity: 0;">
-    <img src="arrow.png" style="display: block; margin-left: auto; margin-right: auto; width: 8em;">
-  </div>
-</div>
 
-<div class="separator">
-  <div class="row">
-    <div class="column">
-      <img class="headshot_desktop" src="gradphoto.JPG" alt="Evan Anderson holding Utah State University diploma"></img>
-    </div>
-    <div class="column">
-      <div class="column_box">
-        <p class="body_header">About Me</p>
-        <p class="body_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My name is Evan Anderson, and I grew up in Pocatello, Idaho. I recently graduated from Utah State University with a Bachelor of Science in Computer Science and a minor in Multimedia Development.</p>
-        <p class="body_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I love working with technology and solving problems. Since a young age, I have been fascinated by computers. My interest in video games, and video game development as a kid sparked my interest in coding. This led me to studying Computer Science, and allowed me to discover esports and leadership opportunities in college.</p>
-        <p class="body_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As a student, I've been able to work on some interesting projects for my coursework, as well as contribute to meaningful work through various internships. This portfolio showcases some of my favorite projects, and includes links to open source software. For work that is confidential, such as those done as Centene, approved summaries are provided.</p>
-        <p class="body_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am currently working as an IT technician intern at iFIT. I am searching for full-time employment opportunities after this internship concludes in August 2025.</p>
-        <p class="body_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;evan add stuff about your skills</p>
-        <br>
-        <p class="body_text">Contact: <a href="mailto:evanmand@protonmail.com">evanmand@protonmail.com</a></p>
-      </div>
-    </div>
+  <div class="pdf_container">
+    <embed class="pdf" src="resume.pdf#zoom=FitH"/>
   </div>
-  <br>
-  <div style="margin: auto; width: fit-content; padding-bottom: 2em; display: flex;">
-    <a class="contactIconLink" href="https://www.linkedin.com/in/emanderson/" target="_blank">
-      <img class="contactIconLeft" src="linkedin.png"  alt="LinkedIn">
-    </a>
-    <a class="contactIconLink" href="https://github.com/evanmarlo" target="_blank">
-      <img class="contactIconRight" src="github.png" alt="GitHub">
-    </a>
-  </div>
+  <p>
+    <a href="./resume.pdf" download="EvanAndersonResume">Download resume PDF</a>
+  </p>
+
 </div>
 
 <script type="text/javascript" src="main.js"></script>
 
-<div class="parallax last_parallax">
-  <div class="home_projects">
-    <p class="project_text">Featured Projects</p>
-    <div class="row">
-      <div class="project_column">
-        <a class="project_img project_link" style="background-image: url('gasicon.jpg')" onmouseover="projectReveal(0)" onmouseleave="projectHide(0)" href="https://www.linkedin.com/in/emanderson/">
-          <p class="project_title" id="gas" style="opacity: 0;">GASPACS</p>
-        </a>
-      </div>
-      <div class="project_column">
-        <a class="project_img project_link" style="background-image: url('feedericon.jpg')" onmouseover="projectReveal(1)" onmouseleave="projectHide(1)" href="https://www.linkedin.com/in/emanderson/">
-          <p class="project_title" id="fish" style="opacity: 0;">Food Dispenser</p>
-        </a>
-      </div>
-      <div class="project_column">
-        <a class="project_img project_link" style="background-image: url('dashboardicon.jpg')" onmouseover="projectReveal(3)" onmouseleave="projectHide(3)" href="https://www.linkedin.com/in/emanderson/">
-          <p class="project_title" id="dashboard" style="opacity: 0;">SOAR Dashboard</p>
-        </a>
-      </div>
-    </div>
-    <div class="row" style="padding-bottom: 4em;">
-      <div class="project_column">
-        <a class="project_img project_link" style="background-image: url('tutoricon.jpg')" onmouseover="projectReveal(2)" onmouseleave="projectHide(2)" href="https://www.linkedin.com/in/emanderson/">
-          <p class="project_title" id="typing" style="opacity: 0;">AI Typing Trainer</p>
-        </a>
-      </div>
-      <div class="project_column">
-        <a class="project_img project_link" style="background-image: url('licenseicon.jpg')" onmouseover="projectReveal(4)" onmouseleave="projectHide(4)" href="https://www.linkedin.com/in/emanderson/">
-          <p class="project_title" id="license" style="opacity: 0;">License Tools</p>
-        </a>
-      </div>
-      <div class="project_column">
-      </div>
-    </div>
-    <!-- <div class="column_box" style="background-color: blueviolet;">
-      <img src="github.png" alt="GitHub">
-      <img src="github.png" alt="GitHub">
-      <img src="github.png" alt="GitHub">
-      <img src="github.png" alt="GitHub">
-    </div> -->
-  </div>
-</div>
 </body>
 </html>
