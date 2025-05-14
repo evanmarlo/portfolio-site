@@ -1,4 +1,7 @@
-// evan right now make hamburger scroll with you and fix blinking thing
+const hamburger = document.getElementById("hamburger");
+hamburger.addEventListener('click', function (event) {
+    event.preventDefault();
+})
 
 function navOpen(isMobile) {
     const hamburger = document.getElementById("hamburger");
@@ -13,10 +16,10 @@ function navOpen(isMobile) {
 
     if (isOpen === 'false') {
         if (isMobile) {
-            nav.style.transform = "translate(-100vw, 0px)";
+            nav.style.transform = "translate(-100vw)";
         }
         else {
-            nav.style.transform = "translate(-14.6vw, 0px)";
+            nav.style.transform = "translate(-14.6vw)";
         }
 
         // Rotate nav image and change to white
@@ -51,10 +54,10 @@ function navOpen(isMobile) {
     }
     else {
         if (isMobile) {
-            nav.style.transform = "translate(100vw, 0px)";
+            nav.style.transform = "translate(100vw)";
         }
         else {
-            nav.style.transform = "translate(14.6vw, 0px)";
+            nav.style.transform = "translate(14.6vw)";
         }
 
         // Set nav as closed
@@ -121,7 +124,6 @@ arrow.addEventListener("animationstart", () => {
 })
 arrow.addEventListener("animationiteration", () => {
     iterCount++;
-    console.log(iterCount);
 })
 
 function scrollFunction() {
