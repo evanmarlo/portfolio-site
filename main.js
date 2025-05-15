@@ -126,7 +126,10 @@ arrow.addEventListener("animationiteration", () => {
     iterCount++;
 })
 
+window.history.scrollRestoration = "manual"; // Prevent window from automatically "scrolling" on render
+
 function scrollFunction() {
+    console.log("Removing arrow");
     if (started === false) {
         arrow.style.animationIterationCount = 0; // Don't blink if user scrolls before it starts blinking
     }
