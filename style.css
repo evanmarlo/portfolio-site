@@ -12,8 +12,6 @@ DFD0B8
 
 @keyframes blink {
   0%,100% { opacity: 0; }
-
-  /* Peak opacity is .6 */
   50% { opacity: .6; }
 }
 
@@ -43,12 +41,7 @@ li {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
-  /* Parallax effect */
-  background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .arrow {
@@ -97,17 +90,12 @@ li {
 }
 
 .headshot_desktop {
-  /* padding-bottom: 0%;
-  margin-top: 4em;
-  margin-bottom: 0%;
-  vertical-align: bottom; */
   width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-top: 4em;
   padding-bottom: 4em;
-  /* height: fit-content; */
 }
 
 .row {
@@ -172,8 +160,6 @@ li {
   right: 3.2em;
   position: fixed;
   display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
   width: 3em;
   height: 3em;
   opacity: 1;
@@ -239,17 +225,8 @@ li {
 .separator {
   background-color: #393E46;
   width: 100%;
-  /* height: 34em; */
   margin: 0%;
 }
-
-/* .contactIcon {
-  height: 8em;
-  width: 8em;
-  vertical-align: middle;
-  float: left;
-  padding: auto;
-} */
 
 .contactIconLink {
   text-decoration: none;
@@ -260,16 +237,6 @@ a img {
   padding-right: .5em;
   height: 8em;
   width: 8em;
-}
-
-img {
-  /* border-radius: 1em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  margin-bottom: 1em; */
-  /* padding-bottom: 1em; */
 }
 
 .home_projects {
@@ -289,24 +256,6 @@ img {
   font-family: "Cabin", sans-serif;
   text-align: center;
 }
-
-/* .left_project_img {
-  margin-top: 4em;
-  margin-right: 4em;
-  display: block;
-  margin-left: auto;
-  width: 50%;
-  border-radius: 40px;
-}
-
-.right_project_img {
-  margin-top: 4em;
-  margin-left: 4em;
-  display: block;
-  margin-right: auto;
-  width: 50%;
-  border-radius: 40px;
-} */
 
 .project_img {
   margin-top: 4em;

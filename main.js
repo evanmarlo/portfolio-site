@@ -6,9 +6,6 @@ hamburger.addEventListener('click', function (event) {
 function navOpen(isMobile) {
     const hamburger = document.getElementById("hamburger");
     const hamburger_mobile = document.getElementById("hamburger_mobile");
-    // const M = document.getElementById("M");
-    // const L = document.getElementById("L");
-    // const R = document.getElementById("R");
     const p = document.getElementsByClassName("p_top");
     const h = document.getElementsByClassName("h1_top");
     const nav = document.getElementById("first_parallax").getElementsByClassName("nav")[0]
@@ -36,21 +33,6 @@ function navOpen(isMobile) {
 
         // Set nav as open
         hamburger.dataset.isOpen = 'true';
-
-        // Scale Columns when nav is open
-        // M.style.width = '42.7%';
-        // L.style.width = '26.4%';
-        // R.style.width = '30.9%';
-
-        // Scale paragraphs when nav is open
-        // for (let i = 0; i < p.length; i++) {
-        //     p[i].style.fontSize = '.81vw';
-        //     }
-    
-        // // Scale header when nav is open
-        // for (let i = 0; i < h.length; i++) {
-        //     h[i].style.fontSize = '1.31vw';
-        //     }
     }
     else {
         if (isMobile) {
@@ -74,25 +56,13 @@ function navOpen(isMobile) {
             hamburger_mobile.src="menu.png";
             hamburger_mobile.style.opacity = 1;
         }, 200);
-
-        // Restore size of columns
-        // M.style.width = '58.4%';
-        // L.style.width = '32.6%';
-        // R.style.width = '9%';
-
-        // Restore text size
-        // for (let i = 0; i < p.length; i++) {
-        //     p[i].style.fontSize = '1vw';
-        //     }
-        // for (let i = 0; i < h.length; i++) {
-        //     h[i].style.fontSize = '1.62vw';
-        //     }
     }
 }
 
 const p = document.getElementsByClassName("p_top");
 const h = document.getElementsByClassName("h1_top");
 var resizeTimer;
+
 window.onresize = () => {
     for (let i = 0; i < p.length; i++) {
         p[i].classList.add('no-transition');
@@ -131,7 +101,7 @@ window.history.scrollRestoration = "manual"; // Prevent window from automaticall
 function scrollFunction() {
     console.log("Removing arrow");
     if (started === false) {
-        arrow.style.animationIterationCount = 0; // Don't blink if user scrolls before it starts blinking
+        arrow.style.animationIterationCount = 0; // Don't blink if user scrolls before arrow starts blinking
     }
     else {
         arrow.style.animationIterationCount = iterCount + 1;
