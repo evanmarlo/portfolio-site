@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+  <link rel="stylesheet" href="style.css">
+<title>Evan Anderson Portfolio</title>
+</head>
+
+<body>
+<div id="first_parallax" class="parallax" style="height: 10%;">
+  <!-- Two hamburgers, one is for desktop the other is for mobile -->
+  <a href="#!">
+    <img id="hamburger" class="navimage" data-is-open="false" onclick="navOpen(false)" src="menu.png">
+  </a>
+  <a href="#!">
+    <img id="hamburger_mobile" class="navimage_mobile" data-is-open="false" onclick="navOpen(true)" src="menu.png">
+  </a>
+  <div class="nav">
+    <div class="nav_item_container">
+      <a class="nav_item" href="/">
+        <img class="nav_item_img" src="homeicon.png">
+        <p class="nav_item_text">Home</p>
+      </a>
+    </div>
+    <div class="nav_item_container">
+      <a class="nav_item" href="resume">
+        <img class="nav_item_img" src="resumeicon.png">
+        <p class="nav_item_text">Resume</p>
+      </a>
+    </div>
+    <div class="nav_item_container">
+      <a class="nav_item" href="https://www.linkedin.com/in/emanderson/">
+        <img class="nav_item_img" src="gasiconsmall.png">
+        <p class="nav_item_text">GASPACS</p>
+      </a>
+    </div>
+    <div class="nav_item_container">
+      <a class="nav_item" href="https://www.linkedin.com/in/emanderson/">
+        <img class="nav_item_img" src="feedericonsmall.png">
+        <p class="nav_item_text">Fish Food Dispenser</p>
+      </a>
+    </div>
+    <div class="nav_item_container">
+      <a class="nav_item" href="dashboard">
+        <img class="nav_item_img" src="dashboardiconsmall.png">
+        <p class="nav_item_text">SOAR Dashboard</p>
+      </a>
+    </div>
+    <div class="nav_item_container">
+      <a class="nav_item" href="https://www.linkedin.com/in/emanderson/">
+        <img class="nav_item_img" src="keyboardicon.png">
+        <p class="nav_item_text">Typing Trainer</p>
+      </a>
+    </div>
+    <div class="nav_item_container">
+      <a class="nav_item" href="reclamation">
+        <img class="nav_item_img" src="keyicon.png">
+        <p class="nav_item_text">License Reclamation</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="separator">
+  <div class="row">
+    <div class="column">
+      <div class="column_box">
+        <p class="body_header">GASPACS</p>
+        <p class="body_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Get Away Special Passive Attitude Control Satellite (<a href="https://www.usu.edu/physics/gas/projects/gaspacs" target="_blank">GASPACS</a>) was a 1U CubeSat designed and assembled by Utah State University's Get Away Special undergraduate research team. I was hired as a fellow in the Summer of 2021 alongside 13 other undergraduates. My focus was working on the satellite's software.</p>
+        <br>
+        <p class="body_header">Mission</p>
+        <p class="body_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GASPACS' primary objective was to deploy an inflatable boom in low Earth orbit and transmit a clear picture of it back. The secondary objective was to determine the effectiveness of the boom in stabilizing the satellite.</p>
+      </div>
+    </div>
+    <div class="column">
+      <img class="headshot_desktop" src="gaspacs.jpeg" alt="Closeup picture of GASPACS"></img>
+    </div>
+  </div>
+</div>
+
+<div class="parallax" style="height: 6.18%;"></div>
+
+<div class="separator">
+    <div class="row">
+        <div class="column">
+            <img style="width: 100%; padding-top: 4em;" src="gaspacs-magnetometer-data.png" alt="Chart showing satellite spin stabilizing over time"></img>
+            <p class="caption">Magnetometer data returned from GASPACS</p>
+            <img style="width: 100%; padding-top: 4em;" src="gaspacs-lq.jpeg" alt="Picture of Earth taken by GASPACS showing the deployed boom"></img>
+            <p class="caption">Picture taken by GASPACS, showing the deployed boom</p>
+        </div>
+        <div class="column">
+        <div class="column_box">
+            <p class="body_header">Outcomes</p>
+            <p class="body_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GASPACS successfully completed both objectives. It transmitted multiple pictures alongside magnetometer data, showing that the inflatable boom stabilized the satellite.</p>
+            <p class="body_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GASPACS became the first satellite to use a Raspberry Pi as the onboard computer (a decision we made to save on costs), and stayed in orbit 117 days before entering the atmosphere. The software and design of GASPACS served as a foundation for GASRATS, a 3U CubeSat currently in development.</p>
+            <br>
+            <p class="body_header">Contributions</p>
+            <p class="body_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As a member of the software team, I contributed to the project by writing driver and transmission protection software. This Python code ensured that the satellite's software would continue to function even if a non-critical piece of hardware (such as a solar panel) failed. It also managed the transmission queue to ensure packets were formatted correctly and were droppeed if there was any data corruption.</p>
+            <p class="body_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alongside this, I took on conducting unit tests and writing documentation. The GASPACS software is open-source and can be found <a href="https://github.com/SmallSatGasTeam/CubeWorks" target="_blank">here</a>.</p>
+            <p class="body_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout this project, I gained valuable software development experience as well as experience using Python, Git, and practicing Agile development. I practiced working with a team and meeting important deadlines. I was also able to network with professionals from NASA, SpaceX, and Nanoracks. I learned a lot about aerospace research, regulations, funding, and how most satellite systems function.</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

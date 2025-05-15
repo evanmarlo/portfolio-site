@@ -157,6 +157,15 @@ li {
   font-family: "Raleway", sans-serif;
 }
 
+.caption {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .navimage {
   visibility: visible;
   top: 2em;
