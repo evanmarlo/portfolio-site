@@ -350,6 +350,7 @@ a.project_link {
   }
   .project_img {
     width: 40%;
+    margin-bottom: 4em;
   }
 
   .project_img:hover {
