@@ -283,6 +283,7 @@ a img {
   padding-top: .25em;
 
   transition: opacity .25s ease-in-out;
+  transition-delay: .1s;
 }
 
 .project_column {
@@ -390,5 +391,12 @@ a.project_link {
 
   .pdf_container {
     padding-top: 10%;
+  }
+}
+
+/* Don't display featured project titles if screen too thin to prevent overlap with image */
+@media (max-width: 1800px) {
+  .project_title {
+    display: none;
   }
 }
