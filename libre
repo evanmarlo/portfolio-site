@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+  <link rel="stylesheet" href="style.css">
+<title>Evan Anderson Portfolio</title>
+</head>
+
+<body style="height: 100%;">
+<div id="first_parallax" class="parallax" style="height: auto">
+  <!-- Two hamburgers, one is for desktop the other is for mobile -->
+  <a href="#!">
+    <img id="hamburger" class="navimage" data-is-open="false" onclick="navOpen(false)" src="menu.png">
+  </a>
+  <a href="#!">
+    <img id="hamburger_mobile" class="navimage_mobile" data-is-open="false" onclick="navOpen(true)" src="menu.png">
+  </a>
+  <div class="nav">
+    <div class="nav_item_container">
+      <a class="nav_item" href="/">
+        <img class="nav_item_img" src="homeicon.png">
+        <p class="nav_item_text">Home</p>
+      </a>
+    </div>
+    <div class="nav_item_container">
+      <a class="nav_item" href="resume">
+        <img class="nav_item_img" src="resumeicon.png">
+        <p class="nav_item_text">Resume</p>
+      </a>
+    </div>
+    <div class="nav_item_container">
+      <a class="nav_item" href="gaspacs">
+        <img class="nav_item_img" src="gasiconsmall.png">
+        <p class="nav_item_text">GASPACS</p>
+      </a>
+    </div>
+    <div class="nav_item_container">
+      <a class="nav_item" href="dispenser">
+        <img class="nav_item_img" src="feedericonsmall.png">
+        <p class="nav_item_text">Fish Food Dispenser</p>
+      </a>
+    </div>
+    <div class="nav_item_container">
+      <a class="nav_item" href="dashboard">
+        <img class="nav_item_img" src="dashboardiconsmall.png">
+        <p class="nav_item_text">SOAR Dashboard</p>
+      </a>
+    </div>
+    <div class="nav_item_container">
+      <a class="nav_item" href="tutor">
+        <img class="nav_item_img" src="keyboardicon.png">
+        <p class="nav_item_text">Typing Trainer</p>
+      </a>
+    </div>
+    <div class="nav_item_container">
+      <a class="nav_item" href="reclamation">
+        <img class="nav_item_img" src="keyicon.png">
+        <p class="nav_item_text">License Reclamation</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="pdf_container">
+    <embed class="pdf" src="LibreOfficeDocumentation.pdf#zoom=FitH"/>
+  </div>
+  <p class="download">
+    <a href="./LibreOfficeDocumentation.pdf" download="EvanAndersonDocs">Click to open PDF</a>
+  </p>
+
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
